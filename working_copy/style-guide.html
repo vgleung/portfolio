@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Portfolio: Style Guide</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.min.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Source+Sans+Pro:400,600" rel="stylesheet">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<!-- javascript for smooth scrolling from: https://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
+		<script src="js/smooth-scroll.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Styleguide</h1>
+
+			<h2>On this page</h2>
+			<nav class="nav-bar">
+				<a href="#interact">interactive elements</a>
+				<a href="#text">text elements</a>
+				<a href="#combined">combined elements</a>
+			</nav>
+
+			<h2>Other links</h2>
+			<nav class="nav-bar">
+				<a href="index.html">portfolio</a>
+				<a href="citations.html">citations</a>
+			</nav>
+		</div>
+
+		<div class="body-container">
+			<div id="interact">
+				<h2>Interactive Elements</h2>
+
+				<h3>In-text link</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<a href="#">Link</a>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>a</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+						</code>
+					</div>
+				</div>
+
+				<h3>Navigation Button Style</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<nav class="nav-bar">
+							<a href="#">about</a>
+						</nav>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>nav.nav-bar a</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;nav.nav-bar&#x3E;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;a href=&#x22;#&#x22;&#x3E;about&#x3C;/a&#x3E;<br>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/nav&#x3E;
+						</code>
+					</div>
+				</div>
+
+				<h3>Submit and Reset Buttons For Forms</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<div class="button">
+							contact
+						</div>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>.button</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;div class=&#x22;button&#x22;&#x3E;<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;contact<br>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/div&#x3E;
+						</code>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="text">
+				<h3>Text Elements</h3>
+
+				<h3>Three Level of Headings</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>h1</p>
+						<p>h2</p>
+						<p>h3</p>
+						<p>h4</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x3C;h1&#x3E;Heading 1&#x3C;/h1&#x3E;<br>
+							&#x3C;h2&#x3E;Heading 2&#x3C;/h2&#x3E;<br>
+							&#x3C;h3&#x3E;Heading 3&#x3C;/h3&#x3E;<br>
+							&#x3C;h4&#x3E;Heading 4&#x3C;/h4&#x3E;<br>
+						</code>
+					</div>
+				</div>
+
+				<h3>Paragraph</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<p>Curabitur quis mi libero. Sed efficitur finibus odio at placerat. Nunc rutrum, tortor vel aliquam tristique, nunc tortor vehicula nunc, a fermentum tellus odio in nibh. Nulla ut iaculis nisi. Quisque ut diam vel mi semper dictum. In sed elit quis diam ornare pulvinar in quis urna. Aliquam sit amet quam facilisis, aliquam est a, tristique elit. Aenean sem dolor, egestas ac fringilla eu, facilisis et mauris. Etiam a orci dolor. Sed pellentesque lacus vitae efficitur sagittis.</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>p</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x3C;p&#x3E;Curabitur quis mi libero. Sed efficitur finibus odio at placerat. Nunc rutrum, tortor vel aliquam tristique, nunc tortor vehicula nunc, a fermentum tellus odio in nibh. Nulla ut iaculis nisi. Quisque ut diam vel mi semper dictum. In sed elit quis diam ornare pulvinar in quis urna. Aliquam sit amet quam facilisis, aliquam est a, tristique elit. Aenean sem dolor, egestas ac fringilla eu, facilisis et mauris. Etiam a orci dolor. Sed pellentesque lacus vitae efficitur sagittis.&#x3C;/p&#x3E;
+						</code>
+					</div>
+				</div>
+
+				<h3>Bulleted List</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<ul>
+							<li>Listed item</li>
+							<li>Listed item</li>
+							<li>Listed item</li>
+						</ul>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>ul li</p>
+						<p>li</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;ul&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;li&#x3E;Listed item&#x3C;/li&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;li&#x3E;Listed item&#x3C;/li&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;li&#x3E;Listed item&#x3C;/li&#x3E;<br>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/ul&#x3E;
+						</code>
+					</div>
+				</div>
+
+				<h3>Numbered List</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<ol>
+							<li>Listed item</li>
+							<li>Listed item</li>
+							<li>Listed item</li>
+						</ol>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>ol li</p>
+						<p>li</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;ol&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;li&#x3E;Listed item&#x3C;/li&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;li&#x3E;Listed item&#x3C;/li&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;li&#x3E;Listed item&#x3C;/li&#x3E;<br>
+							&#x9;&#x9;&#x9;&#x9;&#x9;&#x3C;/ol&#x3E;
+						</code>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="combined">
+				<h3>Combined Elements</h3>
+
+				<h3>Main Navigation</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<div class="header">
+							<nav class="nav-bar">
+								<a href="#">about</a>
+								<a href="#">work</a>
+								<a href="#">contact</a>
+							</nav>
+						</div>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>.header</p>
+						<p>nav.nav-bar a</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x3C;div class=&#x22;header&#x22;&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;nav class=&#x22;nav-bar&#x22;&#x3E;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;a href=&#x22;#&#x22;&#x3E;about&#x3C;/a&#x3E;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;a href=&#x22;#&#x22;&#x3E;work&#x3C;/a&#x3E;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;a href=&#x22;#&#x22;&#x3E;contact&#x3C;/a&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;/nav&#x3E;<br>
+							&#x3C;/div&#x3E;
+						</code>
+					</div>
+				</div>
+
+				<h3>Project</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3">
+						<h4>Rendered element:</h4>
+						<div class="project">
+							<a href="#"><img src="http://placehold.it/500x300" alt="Project thumbnail"></a>
+							<h4>web design</h4>
+							<a href="#">Pokemon Database</a>
+						</div>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>.project</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x3C;div class=&#x22;project&#x22;&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;img src=&#x22;http://placehold.it/500x300&#x22; alt=&#x22;Project thumbnail&#x22;&#x3E;&#x3C;/a&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;h4&#x3E;web design&#x3C;/h4&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;a href=&#x22;#&#x22;&#x3E;Pokemon Database&#x3C;/a&#x3E;<br>
+							&#x3C;/div&#x3E;
+						</code>
+					</div>
+				</div>
+
+				<h3>Website Grid Structure</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3 style-guide-render">
+						<h4>Rendered element:</h4>
+						<p>grid-col-1of3</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>CSS selector:</h4>
+						<p>grid-row</p>
+						<p>grid-col-1of3</p>
+						<p>[class^='grid-col-']</p>
+					</div>
+					<div class="grid-col-1of3">
+						<h4>Sample code:</h4>
+						<code>
+							&#x3C;div class=&#x22;grid-row&#x22;&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;div class=&#x22;grid-col-1of3&#x22;&#x3E;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;p&#x3E;grid-col-1of3&#x3C;/p&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;/div&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;div class=&#x22;grid-col-1of3&#x22;&#x3E;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;p&#x3E;grid-col-1of3&#x3C;/p&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;/div&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;div class=&#x22;grid-col-1of3&#x22;&#x3E;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;p&#x3E;grid-col-1of3&#x3C;/p&#x3E;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&#x3C;/div&#x3E;<br>
+							&#x3C;/div&#x3E;
+						</code>
+					</div>
+				</div>
+
+				<h3>Website Colour Swatches</h3>
+				<div class="grid-row">
+					<div class="grid-col-1of3 style-guide-render color" id="dark-grey">
+						<p>#5A5A5A</p>
+					</div>
+					<div class="grid-col-1of3 style-guide-render color" id="light-grey">
+						<p>#BABABA</p>
+					</div>
+					<div class="grid-col-1of3 style-guide-render color" id="mint">
+						<p>#00BF68</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer class="front-page">
+			<p>Designed by Vivian Leung, 2017</p>
+		</footer>
+	</body>
+</html>

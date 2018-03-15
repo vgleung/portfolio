@@ -1,0 +1,556 @@
+body,
+html {
+    height: 100%
+}
+
+h2,
+h3 {
+    margin-top: .8rem
+}
+
+a,
+img {
+    -webkit-transition: .5s ease
+}
+
+.grid-row:after,
+nav.nav-bar a:after {
+    content: ''
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+html {
+    min-height: 100%
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #5A5A5A;
+    margin: 0;
+    padding: 0;
+    background: #FFF
+}
+
+.body-container {
+    position: relative;
+    max-width: 1100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 0 1em
+}
+
+code,
+nav.nav-bar a {
+    display: inline-block
+}
+
+.who {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+}
+
+.who h1 {
+    font-size: 3em;
+    text-shadow: 1px 1px 10px #000
+}
+
+.who h4 {
+    font-size: 1.3em;
+    text-shadow: 1px 1px 8px #000
+}
+
+.front-page {
+    padding: 1.5em;
+    min-height: initial;
+    position: initial;
+    bottom: initial
+}
+
+.about {
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 0;
+    color: #5A5A5A
+}
+
+.grid-col-1of5 h2 {
+    text-align: right
+}
+
+[class^="grid-col"].work-details {
+    padding: 0 1.5em;
+    background: rgba(0, 148, 81, 0.15);
+    border-radius: 10px;
+}
+
+.work-details h3 {
+    padding-top: 0.3em;
+}
+
+.work-details ul li {
+    list-style-type: disc;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.header,
+footer {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20.8px;
+    font-size: 1.3rem
+}
+
+h4 {
+    margin-top: .5rem;
+    text-transform: uppercase;
+    color: #BABABA;
+    font-size: 15.2px;
+    font-size: .95rem;
+    font-weight: 400
+}
+
+h4.subtitle {
+    color: #FFF
+}
+
+h4.subtitle.front-page {
+    text-transform: none;
+    letter-spacing: 1px;
+    padding: 0
+}
+
+hr {
+    width: 75%;
+    margin: 4em auto 2em
+}
+
+code {
+    font-family: monospace;
+    font-size: 1.1em;
+    padding: .8em;
+    background: #D6D6D6;
+    width: 100%
+}
+
+figure {
+    margin: 0
+}
+
+figcaption {
+    font-size: 15.2px;
+    font-size: .95rem;
+    padding: .5rem .8rem;
+    font-style: italic
+}
+
+a {
+    color: #00BF68;
+    text-decoration: none;
+    transition: .5s ease
+}
+
+a:focus,
+a:hover {
+    color: #3C6D55
+}
+
+nav.nav-bar a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    margin: .7rem;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-size: 1rem
+}
+
+nav.nav-bar a:after {
+    display: block;
+    height: 1px;
+    width: 0;
+    background: 0 0;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    transition: width .5s ease, background-color .5s ease
+}
+
+footer,
+img {
+    width: 100%
+}
+
+nav.nav-bar a:focus:after,
+nav.nav-bar a:hover:after {
+    width: 100%;
+    background: #3C6D55
+}
+
+.current {
+    text-decoration: underline
+}
+
+footer {
+    padding: .5rem;
+    position: absolute;
+    bottom: 0
+}
+
+a,
+li,
+p {
+    font-size: 15.2px;
+    font-size: .95rem;
+    line-height: 23.2px;
+    line-height: 1.45rem
+}
+
+ul li {
+    list-style-type: none
+}
+
+img {
+    transition: .5s ease
+}
+
+img.logo {
+    width: initial
+}
+
+a img:focus,
+a img:hover {
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
+}
+
+.header {
+    max-width: 1200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2em
+}
+
+.header p {
+    margin: 0;
+    font-weight: 600
+}
+
+.header.front-page h1,
+.header.front-page p {
+    color: #FFF
+}
+
+.button {
+    padding: .5em 1em;
+    background: #00BF68;
+    color: #FFF;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    border: none;
+    font-size: 14.4px;
+    font-size: .9rem;
+    float: right
+}
+
+.button:focus,
+.button:hover {
+    background: #2B905F;
+    cursor: pointer;
+    color: #FFF
+}
+
+.style-guide-render {
+    padding: 0 1em;
+    background: #f1f1f1
+}
+
+.style-guide-render.color {
+    padding: 2em;
+    color: #FFF
+}
+
+.style-guide-render.color p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1rem
+}
+
+a#logo,
+img#portrait {
+    margin: auto;
+    display: block
+}
+
+.style-guide-render#dark-grey {
+    background: #5A5A5A
+}
+
+.style-guide-render#light-grey {
+    background: #BABABA
+}
+
+.style-guide-render#mint {
+    background: #00BF68
+}
+
+.parallax {
+    height: 90%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 545px;
+    -webkit-transition: .33s ease-in-out;
+    transition: .33s ease-in-out
+}
+
+.parallax#front-page {
+    background-image: url(../img/Header-img.jpg)
+}
+
+.parallax#pokemon-project {
+    background-image: url(../img/test-project-1.jpg)
+}
+
+.parallax#beedie-dashboard {
+    background-image: url(../img/beedie-dashboard-1.jpg)
+}
+
+.svg-container {
+    overflow-x: auto;
+    overflow-y: hidden
+}
+
+.svg-container object {
+    width: 100%;
+}
+
+.svg-container.logo svg {
+    height: 70px
+}
+
+img#portrait {
+    width: 50%
+}
+
+a#logo {
+    width: 56px
+}
+
+.grid-row {
+    padding: 0 0 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.grid-row.work {
+    padding: 2.5rem 0
+}
+
+.grid-col-1of2 {
+    width: 47.8%;
+    margin-right: 1em
+}
+
+.grid-col-1of3 {
+    width: 32.25%;
+    margin-right: 1em
+}
+
+.grid-col-2of3 {
+    width: 64.5%;
+    margin-right: 1em; 
+}
+
+.grid-col-1of5 {
+    width: 19.5%;
+    margin-right: 1em
+}
+
+.grid-col-4of5 {
+    width: 79%;
+    margin-right: 1em
+}
+
+.grid-col-1of2:first-child,
+.grid-col-1of3:first-child,
+.grid-col-2of3:first-child,
+.grid-col-1of5:first-child {
+    margin-left: 0
+}
+
+.grid-col-1of2:last-child,
+.grid-col-1of3:last-child,
+.grid-col-4of5:last-child {
+    margin-right: 0
+}
+
+[class^=grid-col-] {
+    float: left;
+    padding: 0
+}
+
+[class^=grid-col-] p {
+    margin-top: .2em;
+    padding: 1em;
+}
+
+
+.grid-row:after {
+    display: block;
+    clear: both
+}
+
+@media (max-width:70em) {
+    .grid-col-1of3 {
+        width: 31.5%
+    }
+    .grid-col-2of3 {
+        width: 63%;
+    }
+    .grid-col-1of2 {
+        width: 45.8%;
+        margin-right: 1em
+    }
+    .grid-col-1of5 {
+        width: 19%;
+        margin-right: 1em
+    }
+    .grid-col-4of5 {
+        width: 78%;
+        margin-right: 1em
+    }
+    .grid-row img#portrait {
+        width: 70%
+    }
+}
+
+@media (max-width:45em) {
+    .body-container {
+        margin-bottom: 0;
+    }
+    .grid-row img#portrait,
+    a.button {
+        width: 100%
+    }
+    .grid-row .grid-col-1of5 h2,
+    a.button {
+        text-align: center
+    }
+    a.button {
+        display: block;
+        margin: auto;
+        width: 90%;
+        float: none;
+    }
+    .grid-col-1of2,
+    .grid-col-1of3,
+    .grid-col-2of3,
+    .grid-col-1of5,
+    .grid-col-4of5 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: .7em
+    }
+    div.parallax {
+        height: 80%;
+        min-height: initial
+    }
+    .grid-row.work h2 {
+        text-align: center;
+    }
+    .grid-row {
+        flex-direction: column;
+    }
+    .work-details {
+        order: 1;
+    }
+    .work-info {
+        order: 2;
+    }
+}
+
+@media screen and (max-height:50em) {
+    div.parallax#front-page {
+        background-image: url(../img/Header-img-1.jpg)
+    }
+    /*div.parallax#pokemon-project {
+        background-image: url(../img/pokemon-project-header-2.jpg)
+    }*/
+
+    .parallax#pokemon-project {
+        background-image: url(../img/test-project-1-narrow.jpg)
+    }
+    div.parallax#beedie-dashboard {
+        background-image: url(../img/beedie-dashboard-header-2.jpg)
+    }
+    .parallax .header h4 {
+        text-shadow: 1px 1px 8px #000
+    }
+    .svg-container object {
+        width: 850px;
+    }
+
+    .who h1 {
+        font-size: 2em;
+        text-shadow: 1px 1px 10px #000
+    }
+
+    .who h4 {
+        font-size: 1.1em;
+        text-shadow: 1px 1px 8px #000
+    }
+}
+
+@media screen and (min-height:37em) and (min-width: 55em) and (max-height: 60em) {
+    div.parallax#front-page {
+        background-image: url(../img/Header-img-1.jpg)
+    }
+    /*div.parallax#pokemon-project {
+        background-image: url(../img/pokemon-project-header-2.jpg)
+    }*/
+
+    .parallax#pokemon-project {
+        background-image: url(../img/test-project-1-wide.jpg)
+    }
+    div.parallax#beedie-dashboard {
+        background-image: url(../img/beedie-dashboard-header-2.jpg)
+    }
+    .parallax .header h4 {
+        text-shadow: 1px 1px 8px #000
+    }
+
+    .svg-container object {
+        width: 850px;
+    }
+}
+
+@media (orientation: landscape) {
+    .who {
+        top: 39%;
+    }
+}
