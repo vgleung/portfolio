@@ -95,7 +95,7 @@ h4 {
 
 [class^="grid-col"].work-details {
     padding: 0 1.5em;
-    background: rgba(0, 148, 81, 0.15);
+    background: rgba(0, 56, 30, 0.2);
     border-radius: 10px;
 }
 
@@ -131,10 +131,11 @@ h4 {
 }
 
 h4.subtitle {
-    color: #FFF
+    color: #6E6E6E
 }
 
 h4.subtitle.front-page {
+    color: #FFF;
     text-transform: none;
     letter-spacing: 1px;
     padding: 0
@@ -180,8 +181,7 @@ nav.nav-bar a {
     font-weight: 400;
     margin: .7rem;
     letter-spacing: 1px;
-    font-size: 16px;
-    font-size: 1rem
+    font-size: 1.25rem
 }
 
 nav.nav-bar a:after {
@@ -257,6 +257,14 @@ a img:hover {
 .header.front-page h1,
 .header.front-page p {
     color: #FFF
+}
+
+h1#who-intro {
+    display: inline-block;
+}
+
+h1#who-change-text {
+    display: inline-block;
 }
 
 .button {
@@ -337,6 +345,10 @@ img#portrait {
 
 .parallax#beedie-dashboard {
     background-image: url(../img/beedie-dashboard-1.jpg)
+}
+
+.parallax#discovered {
+    background-image: url(../img/discovered-project-1.jpg)
 }
 
 .svg-container {
@@ -503,13 +515,13 @@ a#logo {
     }*/
 
     .parallax#pokemon-project {
-        background-image: url(../img/test-project-1-narrow.jpg)
+        background-image: url(../img/pokemon-project-narrow.jpg)
     }
-    div.parallax#beedie-dashboard {
-        background-image: url(../img/beedie-dashboard-header-2.jpg)
+    .parallax#beedie-dashboard {
+        background-image: url(../img/beedie-dashboard-narrow.jpg)
     }
-    .parallax .header h4 {
-        text-shadow: 1px 1px 8px #000
+    .parallax#discovered {
+        background-image: url(../img/discovered-project-narrow.jpg)
     }
     .svg-container object {
         width: 850px;
@@ -520,7 +532,7 @@ a#logo {
         text-shadow: 1px 1px 10px #000
     }
 
-    .who h4 {
+    .who h4.subtitle.front-page {
         font-size: 1.1em;
         text-shadow: 1px 1px 8px #000
     }
@@ -530,20 +542,15 @@ a#logo {
     div.parallax#front-page {
         background-image: url(../img/Header-img-1.jpg)
     }
-    /*div.parallax#pokemon-project {
-        background-image: url(../img/pokemon-project-header-2.jpg)
-    }*/
-
     .parallax#pokemon-project {
-        background-image: url(../img/test-project-1-wide.jpg)
+        background-image: url(../img/pokemon-project-wide.jpg)
     }
-    div.parallax#beedie-dashboard {
-        background-image: url(../img/beedie-dashboard-header-2.jpg)
+    .parallax#beedie-dashboard {
+        background-image: url(../img/beedie-dashboard-wide.jpg)
     }
-    .parallax .header h4 {
-        text-shadow: 1px 1px 8px #000
+    .parallax#discovered {
+        background-image: url(../img/discovered-project-wide.jpg)
     }
-
     .svg-container object {
         width: 850px;
     }

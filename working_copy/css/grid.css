@@ -1,129 +1,194 @@
 .grid-row {
-	padding: 0  0 16px 0;
-	padding: 0  0 16px 0;
-	padding: 0  0 1rem 0;
+    padding: 0 0 1rem;
+    display: flex;
+    align-items: flex-start;
 }
 
 .grid-row.work {
-	padding: 40px 0;
-	padding: 40px 0;
-	padding: 2.5rem 0;
+    padding: 2.5rem 0
 }
 
 .grid-col-1of2 {
-	width: 47.8%;
-	margin-right: 1em;
+    width: 47.8%;
+    margin-right: 1em
 }
 
 .grid-col-1of3 {
-	width: 32.25%;
-	margin-right: 1em;
+    width: 32.25%;
+    margin-right: 1em
+}
+
+.grid-col-2of3 {
+    width: 64.5%;
+    margin-right: 1em; 
 }
 
 .grid-col-1of5 {
-	width: 19.5%;
-	margin-right: 1em;
+    width: 19.5%;
+    margin-right: 1em
 }
 
 .grid-col-4of5 {
-	width: 79%;
-	margin-right: 1em;
+    width: 79%;
+    margin-right: 1em
 }
 
-
-.grid-col-1of2:first-child, .grid-col-1of3:first-child, .grid-col-1of5:first-child {
-	margin-left: 0em;
+.grid-col-1of2:first-child,
+.grid-col-1of3:first-child,
+.grid-col-2of3:first-child,
+.grid-col-1of5:first-child {
+    margin-left: 0
 }
 
-.grid-col-1of2:last-child, .grid-col-1of3:last-child, .grid-col-4of5:last-child {
-	margin-right: 0em;
+.grid-col-1of2:last-child,
+.grid-col-1of3:last-child,
+.grid-col-4of5:last-child {
+    margin-right: 0
 }
 
-
-[class^='grid-col-'] {
-	float: left;
-	padding: 0; 
+[class^=grid-col-] {
+    float: left;
+    padding: 0
 }
 
-[class^='grid-col-'] p{
-	margin-top: 0.2em;
-	padding: 1em;
+[class^=grid-col-] p {
+    margin-top: .2em;
+    padding: 1em;
 }
+
 
 .grid-row:after {
-	content: '';
-	display: block;
-	clear: both;
+    display: block;
+    clear: both
 }
 
-@media (max-width: 70em) {
-
-	.grid-col-1of3 {
-		width: 31.5%;
-	}
-
-	.grid-col-1of2 {
-		width: 45.8%;
-		margin-right: 1em;
-	}
-
-	.grid-col-1of5 {
-		width: 19%;
-		margin-right: 1em;
-	}
-
-	.grid-col-4of5 {
-		width: 78%;
-		margin-right: 1em;
-	}
-
-	.grid-row img#portrait {
-		width: 70%;
-	}
+@media (max-width:70em) {
+    .grid-col-1of3 {
+        width: 31.5%
+    }
+    .grid-col-2of3 {
+        width: 63%;
+    }
+    .grid-col-1of2 {
+        width: 45.8%;
+        margin-right: 1em
+    }
+    .grid-col-1of5 {
+        width: 19%;
+        margin-right: 1em
+    }
+    .grid-col-4of5 {
+        width: 78%;
+        margin-right: 1em
+    }
+    .grid-row img#portrait {
+        width: 70%
+    }
 }
 
-@media (max-width: 45em) {
-
-	.grid-col-1of3, .grid-col-1of2, .grid-col-1of5, .grid-col-4of5 {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-bottom: 0.7em;
-	}
-
-	.grid-row .grid-col-1of5 h2 {
-		text-align: center;
-	}
-
-	div.parallax {
-		height: 80%;
-		min-height: initial;
-	}
-
-	.grid-row img#portrait {
-		width: 100%;
-	}
-
-	a.button {
-		width: 100%;
-		text-align: center;
-	}
+@media (max-width:45em) {
+    .body-container {
+        margin-bottom: 0;
+    }
+    .grid-row img#portrait,
+    a.button {
+        width: 100%
+    }
+    .grid-row .grid-col-1of5 h2,
+    a.button {
+        text-align: center
+    }
+    a.button {
+        display: block;
+        margin: auto;
+        width: 90%;
+        float: none;
+    }
+    .grid-col-1of2,
+    .grid-col-1of3,
+    .grid-col-2of3,
+    .grid-col-1of5,
+    .grid-col-4of5 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: .7em
+    }
+    div.parallax {
+        height: 80%;
+        min-height: initial
+    }
+    .grid-row.work h2 {
+        text-align: center;
+    }
+    .grid-row {
+        flex-direction: column;
+    }
+    .work-details {
+        order: 1;
+    }
+    .work-info {
+        order: 2;
+    }
 }
 
-@media (max-height: 54em) {
-	div.parallax#front-page {
-		background-image: url('../img/Header-img-1.jpg');
-	}
+@media screen and (max-height:50em) {
+    div.parallax#front-page {
+        background-image: url(../img/Header-img-1.jpg)
+    }
+    /*div.parallax#pokemon-project {
+        background-image: url(../img/pokemon-project-header-2.jpg)
+    }*/
 
-	div.parallax#pokemon-project {
-		background-image: url('../img/pokemon-project-header-2.jpg');
-	}
+    .parallax#pokemon-project {
+        background-image: url(../img/test-project-1-narrow.jpg)
+    }
+    div.parallax#beedie-dashboard {
+        background-image: url(../img/beedie-dashboard-header-2.jpg)
+    }
+    .parallax .header h4 {
+        text-shadow: 1px 1px 8px #000
+    }
+    .svg-container object {
+        width: 850px;
+    }
 
-	div.parallax#beedie-dashboard {
-		background-image: url('../img/beedie-dashboard-header-2.jpg');
-	}
+    .who h1 {
+        font-size: 2em;
+        text-shadow: 1px 1px 10px #000
+    }
 
-	.parallax .header h4 {
-		text-shadow: 1px 1px 8px #000000
-	}
+    .who h4 {
+        font-size: 1.1em;
+        text-shadow: 1px 1px 8px #000
+    }
+}
+
+@media screen and (min-height:37em) and (min-width: 55em) and (max-height: 60em) {
+    div.parallax#front-page {
+        background-image: url(../img/Header-img-1.jpg)
+    }
+    /*div.parallax#pokemon-project {
+        background-image: url(../img/pokemon-project-header-2.jpg)
+    }*/
+
+    .parallax#pokemon-project {
+        background-image: url(../img/test-project-1-wide.jpg)
+    }
+    div.parallax#beedie-dashboard {
+        background-image: url(../img/beedie-dashboard-header-2.jpg)
+    }
+    .parallax .header h4 {
+        text-shadow: 1px 1px 8px #000
+    }
+
+    .svg-container object {
+        width: 850px;
+    }
+}
+
+@media (orientation: landscape) {
+    .who {
+        top: 39%;
+    }
 }

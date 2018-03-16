@@ -13,6 +13,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<!-- javascript for smooth scrolling from: https://css-tricks.com/snippets/jquery/smooth-scrolling/ -->
 		<script src="js/smooth-scroll.js"></script>
+		<!-- javascript for typewriting effect from: https://codepen.io/hi-im-si/pen/DHoup -->
+		<script src="js/typewriter.js"></script>
 	</head>
 	<body>
 		<div class="parallax" id="front-page">
@@ -47,8 +49,12 @@
 					<a href="#contact">contact</a>
 				</nav>
 				<div class="who">
-					<h1>web and graphic designer.</h1>
-					<h4 class="subtitle front-page">I strive to create meaningful and fun interfaces</h4>
+					<h1 id="who-intro">Hi, I am&nbsp;
+						<h1 class="typewrite" id ="who-change-text" data-period="2000" data-type='[ "Vivian Leung.", "creative.", "passionate about design.", "a developer.", "a gamer .", "a cat lover." ]'>
+					</h1>
+				    <span class="wrap"></span>
+				</h1>
+					<h4 class="subtitle front-page">I strive to create meaningful and fun interfaces that connect people.</h4>
 				</div>
 			</div>
 		</div>
@@ -72,14 +78,14 @@
 				</div>
 				<div class="grid-col-1of3">
 					<div class="project">
-						<a href="cuphead-evaluation.html"><img src="img/speaker-project-thumb.jpg" alt="Cuphead evaluation thumbnail"></a>
+						<a href="discovered.html"><img src="img/discovered-thumb.jpg" srcset="img/discovered-thumb-1.jpg 1x, img/discovered-thumb-2.jpg 2x, img/discovered-thumb-3.jpg 3x" alt="DIS &#x2022; COVERED project thumbnail"></a>
 						<h4>user experience</h4>
 						<a href="discovered.html">DIS &#x2022; COVERED</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="grid-row">
+			<!-- <div class="grid-row">
 				<div class="grid-col-1of3">
 					<div class="project">
 						<a href="spendings-tracker.html"><img src="img/pokemon-project-thumb.jpg" srcset="img/pokemon-project-thumb-1.jpg 1x, img/pokemon-project-thumb-2.jpg 2x, img/pokemon-project-thumb-3.jpg 3x" alt="Spendings Tracker Mobile thumbnail"></a>
@@ -101,17 +107,17 @@
 						<a href="graduate-program.html">Graduate Program Redesign</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<hr>
 
 			<!-- About me section -->
 			<div class="header" id="about">
 				<h2>About</h2>
-				<h4>web and graphic designer</h4>
+				<h4>web and experience designer</h4>
 			</div>
 			<div class="grid-row about">
-				<p>I strive to create meaningful interfaces since design is visual communication. I started my interest in design initially but after a few courses and one year of internships later, I found myself more interested in web design and programming in particular.Over the years, instead of building interfaces, I now find myself focusing more on creating interactive systems to bridge the gap between making my designs a reality. Through understanding human computer interactions I am able to create minimalistic systems to help users navigate effortlessly.</p>
+				<p>I strive to create meaningful interfaces since design is visual communication. I started my interest in design initially but after a few courses and one year of internships later, I found myself more interested in web design and programming in particular.Over the years, instead of building interfaces, I now find myself focusing more on creating interactive systems to bridge the gap between my designs and its users. Through understanding human computer interactions I am able to create minimalistic systems to enhance user experience.</p>
 			</div>
 
 			<hr>
